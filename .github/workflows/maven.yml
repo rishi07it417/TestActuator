@@ -13,5 +13,5 @@ jobs:
       maven-args: "-B clean package"
       upload-artifact: true
     secrets:
-      MAVEN_USERNAME: ''
-      MAVEN_PASSWORD: ''
+      MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
+      MAVEN_PASSWORD: ${{ secrets.MAVEN_PASSWORD }}
