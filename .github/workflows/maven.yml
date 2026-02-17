@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    uses: org/TestGithubMavenBuildWorkflow/.github/workflows/maven.yml@v1
+    uses: org/TestGithubMavenBuildWorkflow/.github/workflows/maven.yml@main
     with:
       java-version: "17"
       maven-args: "-B clean package"
